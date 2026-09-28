@@ -278,7 +278,7 @@ function parseJsonResponse(text) {
   return JSON.parse(cleaned);
 }
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({
       error: "Method not allowed"
@@ -351,3 +351,4 @@ Answer in clear English.`,
     error: error.message || "Unable to analyze the profile."
   });
 }
+};
