@@ -205,7 +205,7 @@ async function callGemini(parts, systemPrompt, returnJson) {
     );
   }
 
-  const model = process.env.GEMINI_MODEL || "gemini-2.5-flash";
+  const model = process.env.GEMINI_MODEL || "gemini-3.8-flash";
 
   const url =
     "https:" +
