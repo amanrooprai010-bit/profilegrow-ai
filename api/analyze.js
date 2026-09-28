@@ -1,4 +1,4 @@
-const SYSTEM_PROMPT = `
+const SYSTEM_PROMPT = `'
 You are ProfileGrow AI, an Instagram growth consultant for local businesses.
 
 Analyze only the information and screenshots supplied by the user.
