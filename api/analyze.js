@@ -343,12 +343,12 @@ Answer in clear English.`,
 
     const audit = parseJsonResponse(responseText);
 
-    return res.status(200).json(audit);
-  } } catch (error) {
-  console.error("ProfileGrow API error:", error);
+        return res.status(200).json(audit);
+  } catch (error) {
+    console.error("ProfileGrow API error:", error);
 
-  return res.status(500).json({
-    error: error.message || "Unable to analyze the profile."
-  });
-}
+    return res.status(500).json({
+      error: error.message || "Unable to analyze the profile."
+    });
+  }
 };
